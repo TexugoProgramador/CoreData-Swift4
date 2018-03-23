@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Filhos" representedClassName="Filhos" syncable="YES" codeGenerationType="class">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pais2" toMany="YES" deletionRule="Nullify" destinationEntity="Pais" inverseName="filhos2" inverseEntity="Pais" syncable="YES"/>
+    </entity>
+    <entity name="Pais" representedClassName="Pais" syncable="YES" codeGenerationType="class">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filhos2" toMany="YES" deletionRule="Nullify" destinationEntity="Filhos" inverseName="pais2" inverseEntity="Filhos" syncable="YES"/>
+    </entity>
+    <entity name="Pessoas" representedClassName=".Pessoas" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pessoas" positionX="-11322" positionY="-9540" width="128" height="60"/>
+        <element name="Pais" positionX="-11322" positionY="-9531" width="128" height="75"/>
+        <element name="Filhos" positionX="-11304" positionY="-9504" width="128" height="75"/>
+    </elements>
+</model>
